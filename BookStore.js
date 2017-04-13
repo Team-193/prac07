@@ -1,5 +1,15 @@
 var listOfAllKnownAuthors = []
 
+class BookStore
+{
+    constructor(name, address, owner)
+    {
+        this._name = name;
+        this._address = address;
+        this._owner = owner;
+        this._booksAvailable = [];
+        this._totalCopiesOfAllBooks = 0
+    }
 
     authorKnown(authorName)
     {
